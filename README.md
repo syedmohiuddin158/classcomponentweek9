@@ -16,10 +16,13 @@ A class component that counts the number of times an emoji button is clicked.
 **File:** `src/Facebookemoji.js`
 
 **Usage in `index.js`:**
+
 ```jsx
+
 <FacebookEmojiCounter type="Like" />
 <FacebookEmojiCounter type="Love" />
 <FacebookEmojiCounter type="happy" />
+
 
 2. ToggleMode
 
