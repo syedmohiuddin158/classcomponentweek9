@@ -1,59 +1,61 @@
-This repository contains the React class components developed as part of the lab exercise for CN5006. The lab demonstrates creating interactive components using class-based React components, including state management and event handling, without using React Hooks.
+Overview:
+This repository contains the React class components developed as part of the CN5006 lab exercise.
+The purpose of this lab is to understand how class-based components manage state and handle events without using React Hooks, and to compare them with functional components implemented in earlier labs.
 
-Components
-
+📌 Components Overview
 1. FacebookEmojiCounter
 
-A class component that counts the number of times an emoji button is clicked.
+FacebookEmojiCounter is a React class component that records how many times an emoji button is clicked.
 
-Features:
-Accepts a type prop to determine which emoji to display (Like, Love, or happy).
-Maintains its own state to track the number of clicks.
-Updates the UI whenever the button is clicked.
+Key Features:
 
-File: src/Facebookemoji.js
+Accepts a type property to control the emoji displayed (Like, Love, or happy)
 
-Usage in index.js:
-FacebookEmojiCounter type="Like"
-FacebookEmojiCounter type="Love"
-FacebookEmojiCounter type="happy"
+Uses internal component state to track the click count
 
+Updates the UI every time the button is clicked
+
+Demonstrates constructor usage, state initialization, and event binding
+
+File Location:
+src/Facebookemoji.js
+
+Used in index.js as:
+FacebookEmojiCounter with type set to Like
+FacebookEmojiCounter with type set to Love
+FacebookEmojiCounter with type set to happy
 
 2. ToggleMode
 
-A class component that toggles between a happy and sad emoji on button click.
+ToggleMode is a class component that switches between two emojis when the button is clicked.
 
-Features:
-Maintains the currently displayed emoji as component state.
-Updates the displayed image on every click.
+Key Features:
 
-File: src/ToggleModeComponent.js
+Stores the currently displayed emoji as component state
 
-Usage in index.js:
+Toggles between happy and sad emojis on each click
+
+Demonstrates conditional state updates using previous state
+
+File Location:
+src/ToggleModeComponent.js
+
+Used in index.js as:
 ToggleMode
 
+⚙️ Project Setup Instructions
 
-3. Setup Instructions
+To run this project locally, follow these steps:
 
-Clone the repository:
-git clone https://github.com/your-username/ClassComponentweek9.git
+Clone the repository from GitHub:
+https://github.com/syedmohiuddin158/ClassComponentweek9
 
-Navigate to the project folder:
-cd ClassComponentweek9
+Navigate into the project folder:
+ClassComponentweek9
 
-Install dependencies:
-npm install
+Install required dependencies using npm.
 
-Run the app:
-npm start
+Start the development server.
 
-The app will open in your browser at http://localhost:3000/
-
-
-
-Run the application:
-
-npm start
-
-
-The app will open in your browser (default: http://localhost:3000/).
+Once started, the application will open automatically in the browser at:
+http://localhost:3000
