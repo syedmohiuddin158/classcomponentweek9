@@ -1,22 +1,19 @@
-# CN5006 - React Class Components Lab
-
-## **Overview**
-
-This repository contains the React class components developed as part of the lab exercise for CN5006. The lab demonstrates creating interactive components using **class-based React components**, including state management and event handling, without using React Hooks.
+This repository contains the React class components developed as part of the lab exercise for CN5006. The lab demonstrates creating interactive components using class-based React components, including state management and event handling, without using React Hooks.
 
 ---
 
-## **Components**
+## Components
 
 ### 1. FacebookEmojiCounter
 
-- A class component that counts the number of times an emoji button is clicked.
-- Features:
-  - Accepts a `type` prop to determine which emoji to display (`Like`, `Love`, or `happy`).
-  - Maintains its own `state` to track the number of clicks.
-  - Updates the UI whenever the button is clicked.
+A class component that counts the number of times an emoji button is clicked.
 
-**File:** `src/Facebookemoji.js`  
+**Features:**
+- Accepts a `type` prop to determine which emoji to display (Like, Love, or happy).
+- Maintains its own state to track the number of clicks.
+- Updates the UI whenever the button is clicked.
+
+**File:** `src/Facebookemoji.js`
 
 **Usage in `index.js`:**
 ```jsx
@@ -24,41 +21,42 @@ This repository contains the React class components developed as part of the lab
 <FacebookEmojiCounter type="Love" />
 <FacebookEmojiCounter type="happy" />
 
+2. ToggleMode
 
+A class component that toggles between a happy and sad emoji when the button is clicked.
 
-### 2. ToggleMode
+Features:
 
- - A class component that toggles between a happy and sad emoji on button click.
+Maintains the currently displayed emoji as component state.
 
- - Features:
+Updates the displayed image on every click.
 
- - Maintains the currently displayed emoji as component state.
- - Updates the displayed image on every click.
+File: src/ToggleModeComponent.js
 
-**File:** ` src/ToggleModeComponent.js`
+Usage in index.js:
 
-**Usage in `index.js`:**
 <ToggleMode />
 
-*** 3. Setup Instructions
+3. Setup Instructions
 
- - Clone the repository:
+Clone the repository:
 
 git clone https://github.com/your-username/ClassComponentweek9.git
 
 
- - Navigate to the project folder:
+Navigate to the project folder:
 
 cd ClassComponentweek9
 
- - Install dependencies:
+
+Install dependencies:
 
 npm install
 
 
- - Run the app:
+Run the application:
 
 npm start
 
 
- - The app will open in your browser (default http://localhost:3000/).
+The app will open in your browser (default: http://localhost:3000/).
