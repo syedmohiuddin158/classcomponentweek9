@@ -24,39 +24,41 @@ This repository contains the React class components developed as part of the lab
 <FacebookEmojiCounter type="Love" />
 <FacebookEmojiCounter type="happy" />
 
+
+
 ### 2. ToggleMode
 
-A class component that toggles between a happy and sad emoji on button click.
+ - A class component that toggles between a happy and sad emoji on button click.
 
-Features:
+ - Features:
 
-Maintains the currently displayed emoji as component state.
-Updates the displayed image on every click.
+ - Maintains the currently displayed emoji as component state.
+ - Updates the displayed image on every click.
 
-File: src/ToggleModeComponent.js
+**File:** ` src/ToggleModeComponent.js`
 
-Usage in index.js:
+**Usage in `index.js`:**
 <ToggleMode />
 
 *** 3. Setup Instructions
 
-Clone the repository:
+ - Clone the repository:
 
 git clone https://github.com/your-username/ClassComponentweek9.git
 
 
-Navigate to the project folder:
+ - Navigate to the project folder:
 
 cd ClassComponentweek9
 
-Install dependencies:
+ - Install dependencies:
 
 npm install
 
 
-Run the app:
+ - Run the app:
 
 npm start
 
 
-The app will open in your browser (default http://localhost:3000/).
+ - The app will open in your browser (default http://localhost:3000/).
