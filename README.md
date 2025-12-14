@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# CN5006 - React Class Components Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**
 
-## Available Scripts
+This repository contains the React class components developed as part of the lab exercise for CN5006. The lab demonstrates creating interactive components using **class-based React components**, including state management and event handling, without using React Hooks.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **Components**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. FacebookEmojiCounter
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A class component that counts the number of times an emoji button is clicked.
+- Features:
+  - Accepts a `type` prop to determine which emoji to display (`Like`, `Love`, or `happy`).
+  - Maintains its own `state` to track the number of clicks.
+  - Updates the UI whenever the button is clicked.
 
-### `npm test`
+**File:** `src/Facebookemoji.js`  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Usage in `index.js`:**
+```jsx
+<FacebookEmojiCounter type="Like" />
+<FacebookEmojiCounter type="Love" />
+<FacebookEmojiCounter type="happy" />
 
-### `npm run build`
+### 2. ToggleMode
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A class component that toggles between a happy and sad emoji on button click.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Maintains the currently displayed emoji as component state.
+Updates the displayed image on every click.
 
-### `npm run eject`
+File: src/ToggleModeComponent.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Usage in index.js:
+<ToggleMode />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*** 3. Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone https://github.com/your-username/ClassComponentweek9.git
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate to the project folder:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+cd ClassComponentweek9
 
-### Code Splitting
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the app:
 
-### Making a Progressive Web App
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will open in your browser (default http://localhost:3000/).
